@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sriram | Full Stack Developer</title>
+     <meta name="description" content="Portfolio of Sriram, Full Stack Developer. Building simple and useful software.">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <!-- Navigation Bar -->
+     <nav class="navbar" id="navbar">
+          <div class="nav-container">
+               <a href="#home" class="logo">SR</a>
+               <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#interests" class="nav-link">Interests</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+               </ul>
+               <div style="display: flex; align-items: center; gap: 1rem;">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                         <!-- Sun Icon (shown in dark mode) -->
+                         <svg class="sun-icon" viewBox="0 0 24 24">
+                              <path d="M12 18V19M12 5V6M16.2426 16.2426L16.9497 16.9497M7.05025 7.05025L7.75736 7.75736M18 12H19M5 12H6M16.2426 7.75736L16.9497 7.05025M7.05025 16.9497L7.75736 16.2426M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+                         </svg>
+                         <!-- Moon Icon (shown in light mode) -->
+                         <svg class="moon-icon" viewBox="0 0 24 24" style="display: none;">
+                              <path d="M20.3542 15.3542C19.2963 16.3812 17.7584 17 16 17C12.6863 17 10 14.3137 10 11C10 9.24157 10.6188 7.70366 11.6458 6.6458C9.55395 7.50201 8 9.56993 8 12C8 15.3137 10.6863 18 14 18C16.4301 18 18.498 16.446 19.3542 14.3542Z" fill="currentColor" />
+                         </svg>
+                    </button>
+                    <div class="hamburger">
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                         <span class="bar"></span>
+                    </div>
+               </div>
+          </div>
+     </nav>
+
+     <!-- Hero Section -->
+     <header id="home" class="hero section reveal">
+          <div class="container hero-container">
+               <div class="hero-content">
+                    <p class="greeting slide-in">Hello, this is</p>
+                    <h1 class="name slide-in delay-1">Sriram</h1>
+                    <h2 class="subtitle slide-in delay-2"><span id="typing-text"></span><span class="cursor">|</span></h2>
+                    <p class="tagline slide-in delay-3">“Solving real-world problems through software solutions.”</p>
+                    <div class="hero-cta slide-in delay-4">
+                         <a href="#projects" class="btn btn-primary">View My Work</a>
+                         <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                         <a href="https://www.linkedin.com/in/sriram-sailappan-79b537310?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                              </svg>
+                              LinkedIn
+                         </a>
+                    </div>
+               </div>
+               <div class="hero-image-wrap fade-in float-animation delay-5">
+                    <div class="hero-image">
+                         <!-- Profile Image -->
+                         <img src="sriram.jpg" alt="Sriram Profile" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" onerror="this.outerHTML='<svg viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'></path><circle cx=\'12\' cy=\'7\' r=\'4\'></circle></svg>'">
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <!-- Skills Section -->
+     <section id="skills" class="section reveal">
+          <div class="container">
+               <h2 class="section-title">Skills & Knowledge</h2>
+               <div class="skills-grid">
+
+                    <div class="skill-card fade-up">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5">
+                         </div>
+                         <h3>HTML</h3>
+                    </div>
+
+                    <div class="skill-card fade-up delay-1">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3">
+                         </div>
+                         <h3>CSS</h3>
+                    </div>
+
+                    <div class="skill-card fade-up delay-2">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                         </div>
+                         <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="skill-card fade-up">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                         </div>
+                         <h3>Node.js</h3>
+                    </div>
+
+                    <div class="skill-card fade-up delay-1">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java">
+                         </div>
+                         <h3>Java</h3>
+                    </div>
+
+                    <div class="skill-card fade-up delay-2">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL">
+                         </div>
+                         <h3>MySQL</h3>
+                    </div>
+
+                    <div class="skill-card fade-up">
+                         <div class="skill-icons">
+                              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python">
+                         </div>
+                         <h3>Python</h3>
+                    </div>
+
+                    <div class="skill-card fade-up delay-1">
+                         <div class="skill-icons">
+                              <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" alt="Scratch" title="Scratch" style="height: 40px; object-fit: contain;">
+                         </div>
+                         <h3>Scratch</h3>
+                    </div>
+
+
+
+               </div>
+
+               <div class="skills-bottom-row" style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+
+
+                    <div class="skill-card fade-up" style="flex: 1; min-width: 260px; max-width: 400px;">
+                         <div class="skill-icons">
+                              <div class="icon-wrap" data-tooltip="VS Code"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code"></div>
+                              <div class="icon-wrap" data-tooltip="Eclipse"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse" title="Eclipse"></div>
+                              <div class="icon-wrap" data-tooltip="Postman"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" title="Postman"></div>
+                              <div class="icon-wrap" data-tooltip="Selenium WebDriver"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" title="Selenium WebDriver"></div>
+                         </div>
+                         <h3>Tools Used</h3>
+                    </div>
+               </div>
+
+               <!-- GitHub Contributions -->
+               <div class="github-streak-container fade-up delay-2">
+                    <h3 class="streak-title">GitHub Contributions</h3>
+                    <div class="calendar-wrapper" style="overflow-x: auto; padding: 1rem; background: var(--card-bg); border-radius: 6px; display: flex; justify-content: center;">
+                         <img class="streak-img" src="github-streak.png" alt="GitHub Contributions Calendar" style="min-width: 700px; width: 100%; max-width: 800px;">
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Projects Section -->
+     <section id="projects" class="section reveal disable-overflow">
+          <div class="container">
+               <h2 class="section-title">Projects</h2>
+
+               <!-- Featured Tradeshow Project -->
+               <div class="featured-project fade-up" style="cursor: pointer;">
+                    <div class="featured-content-wrapper" style="display: flex; align-items: center; justify-content: space-between; gap: 2rem; position: relative; z-index: 2;">
+                         <div class="featured-content" style="flex: 1;">
+                              <h3>Map Finder</h3>
+                              <p class="featured-desc">A Kids Learning application to get strong in maps and compete with friends and track activity with AI and has parental controlling</p>
+                              <div class="featured-tech">
+                                   <span>HTML/CSS</span>
+                                   <span>JavaScript</span>
+                                   <span>Java</span>
+                              </div>
+                              <div class="project-links">
+                                   <a href="#" class="btn btn-primary sm">Preview</a>
+                                   <a href="https://github.com/7-SRIRAM-S/MapFinder-ServerSide" class="btn btn-secondary sm">Code</a>
+                              </div>
+                         </div>
+                         <div class="featured-image-box" style="display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; max-width: 250px;">
+                              <img src="mapfinder-logo.png" alt="Tradeshow Logo" class="featured-logo" style="width: 150px; height: auto; margin-bottom: 0.5rem;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2358a6ff\' stroke-width=\'2\'><path d=\'M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\'></path><polyline points=\'9 22 9 12 15 12 15 22\'></polyline></svg>'">
+                              <p class="explore-text" style="margin-bottom: 0;">Click. Explore. Learn</p>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="show-more-container fade-up delay-1">
+                    <button id="show-more-btn" class="btn btn-secondary">Explore More Projects</button>
+               </div>
+
+               <!-- Filtered Catalog (Initially Hidden) -->
+               <div class="projects-layout hidden" id="all-projects">
+                    <aside class="projects-sidebar">
+                         <button class="filter-btn active" data-filter="All" style="display: flex; align-items: center; gap: 0.5rem;">
+                              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                   <path d="M4 4h4v4H4V4zm6 0h4v4h-4V4zm6 0h4v4h-4V4zM4 10h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h4v4h-4v-4zm6 0h4v4h-4v-4z" />
+                              </svg> All Projects
+                         </button>
+                         <button class="filter-btn" data-filter="Scratch" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" style="width:20px;height:20px;object-fit:contain;" alt="Scratch"> Scratch</button>
+                         <button class="filter-btn" data-filter="HTML/CSS" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style="width:20px;height:20px;" alt="HTML"> HTML/CSS</button>
+                         <button class="filter-btn" data-filter="JavaScript" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style="width:20px;height:20px;" alt="JS"> JavaScript</button>
+                         <button class="filter-btn" data-filter="Java" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" style="width:20px;height:20px;" alt="Java"> Java</button>
+                         <button class="filter-btn" data-filter="DSA" style="display: flex; align-items: center; gap: 0.5rem;"><svg viewBox="0 0 24 24" width="20" height="20" fill="var(--accent)">
+                                   <path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15 5.6 7.75 12 11.35l6.4-3.6L12 4.15M4.5 9.8l6.75 3.8v7.26L4.5 17.06V9.8m15 7.26-6.75 3.8v-7.26l6.75-3.8v7.26z" />
+                              </svg> DSA</button>
+                         <button class="filter-btn" data-filter="Node.js" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="width:20px;height:20px;" alt="Nodejs"> Node.js</button>
+                         <button class="filter-btn" data-filter="Miscellaneous" style="display: flex; align-items: center; gap: 0.5rem;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" style="width:20px;height:20px;" alt="Misc"> Miscellaneous</button>
+                    </aside>
+                    <div class="projects-content" id="projects-content">
+                         <!-- Rendered by JS -->
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- Interests Section -->
+     <section id="interests" class="section reveal">
+          <div class="container">
+               <h2 class="section-title">My Interests</h2>
+               <div class="interests-grid" id="interests-grid">
+                    <!-- Rendered by JS -->
+               </div>
+          </div>
+     </section>
+
+     <!-- Footer -->
+     <footer id="contact" class="footer reveal">
+          <div class="container footer-container">
+               <div class="footer-links">
+                    <a href="mailto:sriram.sailappan@zohocorp.com" class="social-btn">Email</a>
+                    <span class="social-btn" style="cursor: default;">Emp ID: ZSTTK427</span>
+                    <a href="https://github.com/7-SRIRAM-S" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
+                    <a href="https://www.codewars.com/users/sriram17" target="_blank" rel="noopener noreferrer" class="social-btn">Codewars</a>
+                    <a href="https://www.linkedin.com/in/sriram-sailappan-79b537310?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
+               </div>
+               <p class="footer-msg">&copy; Sriram 2026. All Rights Reserved.</p>
+          </div>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+
+</html>
