@@ -23,7 +23,7 @@ const projects = [
      { title: "Planet Page", desc: "A dynamic web app serving facts about planets via API.", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Planet-Facts" },
      { title: "Rock-Paper-Scissors", desc: "Made a two player mode Game using Web socket", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Rock-Paper-Scissor-Game" },
 
-     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous",  codeLink: "" },
+     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous",  codeLink: "https://github.com/7-SRIRAM-S/TabBlocker-Extension.git" },
      { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous",  codeLink: "https://github.com/7-SRIRAM-S/Automation-Testing.git" }
 ];
 
