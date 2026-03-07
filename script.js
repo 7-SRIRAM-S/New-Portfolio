@@ -18,13 +18,13 @@ const projects = [
 
      { title: "Linked List", desc: "Singly and Doubly Linked List operations and edge cases.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/LinkedList.java" },
      { title: "Stack", desc: "LIFO data structure with various real-world application examples.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Stack.java" },
-     { title: "Binary Search Tree", desc: "BST traversals (Inorder, Preorder, Postorder) and manipulation.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA.git" },
+     { title: "Binary Search Tree", desc: "BST traversals (Inorder, Preorder, Postorder) and manipulation.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Tree.java" },
 
      { title: "Planet Page", desc: "A dynamic web app serving facts about planets via API.", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Planet-Facts" },
      { title: "Rock-Paper-Scissors", desc: "Made a two player mode Game using Web socket", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Rock-Paper-Scissor-Game" },
 
-     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous", previewLink: "", codeLink: "" },
-     { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous", previewLink: "", codeLink: "" }
+     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous",  codeLink: "" },
+     { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous",  codeLink: "https://github.com/7-SRIRAM-S/Automation-Testing.git" }
 ];
 
 // Interests Data
