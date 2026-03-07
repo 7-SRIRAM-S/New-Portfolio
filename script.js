@@ -190,7 +190,7 @@ renderInterests();
 
 // Typing Effect for Subtitle
 const typingText = document.getElementById('typing-text');
-const textArray = ["Future Software Engineer"];
+const textArray = ["Future Software Engineer","Lifelong Learner","Research-Driven Learner"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
