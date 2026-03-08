@@ -15,6 +15,8 @@ const projects = [
      { title: "MatchMaker", desc: "Algorithm implementation to find optimal matches between sets.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/match_maker_with_db" },
      { title: "TreeMap Implementation", desc: "Comprehensive repository of core tree map implementation.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/Student-Grading-System-TreeMap" },
      { title: "Student Manager", desc: "Console application to manage student records efficiently.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/StudentManager" },
+     { title: "Handcricket Game", desc: "A fun console-based handcricket game.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/HandCricket-Game-JAVA.git" },
+     { title: "Word Case Transformer", desc: "A utility to transform word cases.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/Word-Case-Convertor" },
 
      { title: "Linked List", desc: "Singly and Doubly Linked List operations and edge cases.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/LinkedList.java" },
      { title: "Stack", desc: "LIFO data structure with various real-world application examples.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Stack.java" },
@@ -23,13 +25,17 @@ const projects = [
      { title: "Planet Page", desc: "A dynamic web app serving facts about planets via API.", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Planet-Facts" },
      { title: "Rock-Paper-Scissors", desc: "Made a two player mode Game using Web socket", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Rock-Paper-Scissor-Game" },
 
-     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous",  codeLink: "https://github.com/7-SRIRAM-S/TabBlocker-Extension.git" },
-     { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous",  codeLink: "https://github.com/7-SRIRAM-S/Automation-Testing.git" }
+     { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous", codeLink: "https://github.com/7-SRIRAM-S/TabBlocker-Extension.git" },
+     { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous", codeLink: "https://github.com/7-SRIRAM-S/Automation-Testing.git" },
+
+     { title: "Random Number Guess Game", desc: "A classic guessing game implemented in Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Guessing-Game-Rust" },
+     { title: "Odd or Even Checker", desc: "A simple utility to check if a number is odd or even.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Odd-Even-Checker-RUST" },
+     { title: "BMI Calculator", desc: "Calculates Body Mass Index using Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/BMI-Calculator-RUST" }
 ];
 
 // Interests Data
 const interests = [
-     { title: "Rust Language Basics", desc: "Exploring memory safety and concurrency without garbage collection.", link: "https://github.com/7-SRIRAM-S/Guessing-Game-Rust" },
+     { title: "Rust Language Basics", desc: "Exploring memory safety and concurrency without garbage collection.", link: "https://doc.rust-lang.org/book/ch01-01-installation.html" },
      { title: "WASM Calculator", desc: "A web based calculator compiled down to WebAssembly for performance.", link: "https://github.com/7-SRIRAM-S/Arithmetic-Calculator-WASM.git" },
      { title: "Formar Portal", desc: "Ideas around building a portal for comprehensive form management.", link: "https://farmers-portal-ws7i.onrender.com/" },
      { title: "AI-ChatBot", desc: "Multilanguage AI Chatbot using Gemini API-key with voice", link: "https://chatbot-ai-25.onrender.com/" },
@@ -119,6 +125,7 @@ function renderProjects(category) {
                "DSA": `<svg viewBox="0 0 24 24" width="24" height="24" fill="var(--accent)"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18-.21 0-.41-.06-.57-.18l-7.9-4.44A.991.991 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18.21 0 .41.06.57.18l7.9 4.44c.32.17.53.5.53.88v9M12 4.15 5.6 7.75 12 11.35l6.4-3.6L12 4.15M4.5 9.8l6.75 3.8v7.26L4.5 17.06V9.8m15 7.26-6.75 3.8v-7.26l6.75-3.8v7.26z"/></svg>`,
                "Node.js": `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" style="width:24px;height:24px;" alt="Nodejs">`,
                "Scratch": `<img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Scratch.logo.S.png" style="width:24px;height:24px;object-fit:contain;" alt="Scratch">`,
+               "Rust": `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" style="width:24px;height:24px;" alt="Rust">`,
                "Miscellaneous": `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" style="width:24px;height:24px;" alt="Misc">`
           };
           const catIcon = iconMap[project.category] || '';
@@ -190,7 +197,7 @@ renderInterests();
 
 // Typing Effect for Subtitle
 const typingText = document.getElementById('typing-text');
-const textArray = ["Future Software Engineer","Lifelong Learner"];
+const textArray = ["Future Software Engineer", "Lifelong Learner"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
