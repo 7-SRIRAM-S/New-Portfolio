@@ -1,9 +1,5 @@
 // Projects Data
 const projects = [
-     { title: "Shooting Game", desc: "A fun and interactive shooting game with simple mechanics.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1189668684" },
-     { title: "Clock", desc: "Digital/Analog clock visualization with real-time tracking.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1185630126" },
-     { title: "MapFinder (Scratch)", desc: "A creative app to locate places using custom maps.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1190290674" },
-
      { title: "IRCTC", desc: "A UI re-designed version of the popular railway booking portal.", category: "HTML/CSS", previewLink: "https://7-sriram-s.github.io/IRCTC-Redesigned-Page/", codeLink: "https://github.com/7-SRIRAM-S/IRCTC-Redesigned-Page" },
      { title: "Meet-the-brain Recreation", desc: "Pixel-perfect clone of a landing page focusing on responsive design.", category: "HTML/CSS", codeLink: "https://github.com/7-SRIRAM-S/Meet-the-brain-Page-Recreation" },
      { title: "Page Recreation", desc: "Complex layout cloning utilizing CSS grid and flexbox.", category: "HTML/CSS", codeLink: "https://github.com/7-SRIRAM-S/Page_Recreation" },
@@ -18,19 +14,25 @@ const projects = [
      { title: "Handcricket Game", desc: "A fun console-based handcricket game.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/HandCricket-Game-JAVA.git" },
      { title: "Word Case Transformer", desc: "A utility to transform word cases.", category: "Java", codeLink: "https://github.com/7-SRIRAM-S/Word-Case-Convertor" },
 
-     { title: "Linked List", desc: "Singly and Doubly Linked List operations and edge cases.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/LinkedList.java" },
-     { title: "Stack", desc: "LIFO data structure with various real-world application examples.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Stack.java" },
-     { title: "Binary Search Tree", desc: "BST traversals (Inorder, Preorder, Postorder) and manipulation.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Tree.java" },
+     { title: "Random Number Guess Game", desc: "A classic guessing game implemented in Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Guessing-Game-Rust" },
+     { title: "Odd or Even Checker", desc: "A simple utility to check if a number is odd or even.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Odd-Even-Checker-RUST" },
+     { title: "BMI Calculator", desc: "Calculates Body Mass Index using Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/BMI-Calculator-RUST" },
+     { title: "Arithmetic Calculator", desc: "Simple Arithmetic calculator using rust", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Arithmetic-Calculator-Rust" },
+
 
      { title: "Planet Page", desc: "A dynamic web app serving facts about planets via API.", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Planet-Facts" },
      { title: "Rock-Paper-Scissors", desc: "Made a two player mode Game using Web socket", category: "Node.js", codeLink: "https://github.com/7-SRIRAM-S/Rock-Paper-Scissor-Game" },
 
+     { title: "Linked List", desc: "Singly and Doubly Linked List operations and edge cases.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/LinkedList.java" },
+     { title: "Stack", desc: "LIFO data structure with various real-world application examples.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Stack.java" },
+     { title: "Binary Search Tree", desc: "BST traversals (Inorder, Preorder, Postorder) and manipulation.", category: "DSA", codeLink: "https://github.com/7-SRIRAM-S/DSA/blob/master/Tree.java" },
+
      { title: "Chrome Extension – Tab Blocker", desc: "A productivity tool to block distracting websites.", category: "Miscellaneous", codeLink: "https://github.com/7-SRIRAM-S/TabBlocker-Extension.git" },
      { title: "Testing – Car Website Testing", desc: "Automated functional tests built for an automotive site.", category: "Miscellaneous", codeLink: "https://github.com/7-SRIRAM-S/Automation-Testing.git" },
 
-     { title: "Random Number Guess Game", desc: "A classic guessing game implemented in Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Guessing-Game-Rust" },
-     { title: "Odd or Even Checker", desc: "A simple utility to check if a number is odd or even.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/Odd-Even-Checker-RUST" },
-     { title: "BMI Calculator", desc: "Calculates Body Mass Index using Rust.", category: "Rust", codeLink: "https://github.com/7-SRIRAM-S/BMI-Calculator-RUST" }
+     { title: "Shooting Game", desc: "A fun and interactive shooting game with simple mechanics.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1189668684" },
+     { title: "Clock", desc: "Digital/Analog clock visualization with real-time tracking.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1185630126" },
+     { title: "MapFinder (Scratch)", desc: "A creative app to locate places using custom maps.", category: "Scratch", previewLink: "https://scratch.mit.edu/projects/1190290674" }
 ];
 
 // Interests Data
@@ -134,10 +136,10 @@ function renderProjects(category) {
           if (project.previewLink || project.codeLink) {
                linksHTML += '<div class="project-links">';
                if (project.previewLink) {
-                    linksHTML += `<a href="${project.previewLink}" target="_blank" class="btn btn-primary sm">Preview</a>`;
+                    linksHTML += `<a href="${project.previewLink}" target="_blank" class="btn btn-primary sm"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right:4px;vertical-align:middle;"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 12.5a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>Preview</a>`;
                }
                if (project.codeLink) {
-                    linksHTML += `<a href="${project.codeLink}" target="_blank" class="btn btn-secondary sm">Code</a>`;
+                    linksHTML += `<a href="${project.codeLink}" target="_blank" class="btn btn-secondary sm"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right:4px;vertical-align:middle;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>Code</a>`;
                }
                linksHTML += '</div>';
           }

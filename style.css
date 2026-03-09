@@ -526,6 +526,8 @@ a {
     gap: 2rem;
     align-items: flex-start;
     animation: fadeIn 0.5s forwards ease;
+    overflow: visible;
+    isolation: isolate;
 }
 
 .projects-sidebar {
@@ -602,8 +604,14 @@ a {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     border-color: var(--text-muted);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Make Rust logo visible in dark mode */
+:root:not(.light-mode) img[alt="Rust"] {
+    filter: invert(1) brightness(2);
 }
 
 .project-card h3 {
