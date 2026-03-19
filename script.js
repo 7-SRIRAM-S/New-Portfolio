@@ -39,7 +39,7 @@ const projects = [
 const interests = [
      { title: "Rust Language Basics", desc: "Exploring memory safety and concurrency without garbage collection.", link: "https://doc.rust-lang.org/book/ch01-01-installation.html" },
      { title: "WASM Calculator", desc: "A web based calculator compiled down to WebAssembly for performance.", link: "https://github.com/7-SRIRAM-S/Arithmetic-Calculator-WASM.git" },
-     { title: "Formar Portal", desc: "Ideas around building a portal for comprehensive form management.", link: "https://farmers-portal-ws7i.onrender.com/" },
+     { title: "Farmer portal", desc: "Ideas around building a portal for comprehensive form management.", link: "https://farmers-portal-ws7i.onrender.com/" },
      { title: "AI-ChatBot", desc: "Multilanguage AI Chatbot using Gemini API-key with voice.", link: "https://github.com/7-SRIRAM-S/ChatBot-AI" },
      { title: "LLVM", desc: "Studying the fundamentals of compiler infrastructure and intermediate representation.", link: "https://llvm.org/docs/index.html" },
      { title: "Own Wrapper for yargs Library", desc: "Made a userfriendly wrapper for yargs to handle command-line arguments.", link: "https://github.com/7-SRIRAM-S/custom-wrapper-yargs.git" }
